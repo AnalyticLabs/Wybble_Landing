@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  @apply bg-background;
+}
+
+@layer base {
+  :root {
+    --background: #f0f0f0;
+    --foreground: #e3e3e3;
+    --primary: #159abb;
+    --secondary: #11111f;
+    --highlight: #73737b;
+    --white: #ffffff;
+  }
+  html {
+    font-size: 14px;
+
+    @media screen and (min-width: 1024px) {
+      font-size: 16px;
+    }
+
+    @media screen and (min-width: 1536px) {
+      font-size: 16px;
+    }
+  }
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  scroll-padding-top: 80px;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
