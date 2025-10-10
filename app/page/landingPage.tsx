@@ -104,9 +104,6 @@ export function LandingPage() {
           <section id="home">
             <HomeSection />
           </section>
-          <section id="career">
-            <CareersSection />
-          </section>
           <section id="offerings">
             <OfferingSection />
           </section>
@@ -115,6 +112,9 @@ export function LandingPage() {
           </section>
           <section id="investments">
             <InvestmentSection />
+          </section>
+          <section id="career">
+            <CareersSection />
           </section>
           <section id="aboutUs" className="bg-white">
             <FounderSection />

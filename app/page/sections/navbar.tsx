@@ -2,10 +2,10 @@ import { useState, useEffect } from "react";
 
 const NAV_ITEMS = [
   { id: "home", label: "Home" },
-  { id: "career", label: "Careers" },
   { id: "offerings", label: "Offerings" },
   { id: "products", label: "Products" },
   { id: "investments", label: "Investments" },
+  { id: "career", label: "Careers" },
   { id: "aboutUs", label: "About Us" },
   { id: "contact", label: "Contact" },
 ];
