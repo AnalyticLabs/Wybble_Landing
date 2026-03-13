@@ -3,15 +3,16 @@ import type { Config } from "tailwindcss";
 export default {
   content: ["./app/**/{**,.client,.server}/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    colors: {
-      background: "var(--background)",
-      foreground: "var(--foreground)",
-      primary: "var(--primary)",
-      secondary: "var(--secondary)",
-      highlight: "var(--highlight)",
-      white: "var(--white)",
-    },
     extend: {
+      colors: {
+        background: "rgb(var(--background) / <alpha-value>)",
+        foreground: "rgb(var(--foreground) / <alpha-value>)",
+        primary: "rgb(var(--primary) / <alpha-value>)",
+        secondary: "rgb(var(--secondary) / <alpha-value>)",
+        highlight: "rgb(var(--highlight) / <alpha-value>)",
+        white: "rgb(var(--white) / <alpha-value>)",
+      },
+
       fontSize: {
         base: "16px",
         sm: "14px",
@@ -35,6 +36,9 @@ export default {
           "0%": { transform: "rotate(0deg)" },
           "100%": { transform: "rotate(360deg)" },
         },
+      },
+      boxShadow: {
+        glow: "0 0 40px rgba(21,154,187,0.35)",
       },
     },
   },

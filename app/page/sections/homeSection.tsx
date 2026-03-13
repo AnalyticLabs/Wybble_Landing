@@ -1,6 +1,7 @@
 const HomeSection = () => {
   return (
-    <div className="relative h-[38rem] md:max-h-screen lg:h-[48rem] overflow-hidden">
+    // <div className="relative h-[38rem] md:max-h-screen lg:h-[48rem] overflow-hidden">
+    <div className="relative min-h-screen lg:h-[48rem] overflow-hidden">
       <div className="absolute top-16 right-0 h-full md:block opacity-40 md:opacity-100">
         <img
           src="/background-logo.png"
@@ -8,7 +9,8 @@ const HomeSection = () => {
           className="object-cover sm:text-white md:object-contain w-full h-full scale-110 origin-bottom-right motion-rotate-in-180 "
         />
       </div>
-      <div className="relative z-10 container flex flex-col items-start mt-48 sm:mt-0 sm:justify-center h-full md:text-left">
+      {/* <div className="relative z-10 container flex flex-col items-start mt-48 sm:mt-0 sm:justify-center h-full md:text-left"> */}
+      <div className="relative z-10 container flex flex-col items-start justify-center min-h-screen md:text-left pt-24 sm:pt-0">
         <h1 className="text-5xl md:text-6xl font-extrabold text-primary mb-4 w-full -motion-translate-y-in-100 motion-opacity-in-0">
           Wybble.AI
         </h1>

@@ -53,7 +53,8 @@ const FounderSection = () => {
         <p className="text-gray-600 text-lg">
           Proudly supported by leading institutions and visionaries.
         </p>
-        <div className="mt-8 flex justify-center gap-12">
+        {/* <div className="mt-8 flex justify-center gap-12"> */}
+        <div className="mt-8 flex flex-wrap justify-center gap-8 md:gap-12">
           <img
             src="/IIST.png"
             alt="IIST"
@@ -67,6 +68,16 @@ const FounderSection = () => {
           <img
             src="/fluxx.png"
             alt="Fluxx EV"
+            className="w-24 md:w-28 transition-transform transform hover:scale-110 hover:opacity-80"
+          />
+          <img
+            src="/CloudHub.webp"
+            alt="Cloud Hub"
+            className="w-24 md:w-28 transition-transform transform hover:scale-110 hover:opacity-80"
+          />
+          <img
+            src="/parthtech.png"
+            alt="Prath Tech"
             className="w-24 md:w-28 transition-transform transform hover:scale-110 hover:opacity-80"
           />
         </div>

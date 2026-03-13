@@ -16,21 +16,21 @@ const PeopleMentor = () => {
       name: "Subhra Jyoti Lahiri",
       expertise: "Backend & Computer Science",
     },
-    {
-      img: "/omkar.jpg",
-      name: "Omkar Kar",
-      expertise: "ML & Computer Vision",
-    },
+    // {
+    //   img: "/omkar.jpg",
+    //   name: "Omkar Kar",
+    //   expertise: "ML & Computer Vision",
+    // },
     {
       img: "/aritra.jpg",
       name: "Aritra Roy",
       expertise: "AI, NLP & Computer Vision",
     },
-    {
-      img: "/debasish.jpg",
-      name: "Debasish Birmiwal",
-      expertise: "Data Science & Backend",
-    },
+    // {
+    //   img: "/debasish.jpg",
+    //   name: "Debasish Birmiwal",
+    //   expertise: "Data Science & Backend",
+    // },
     {
       img: "/bijon.jpg",
       name: "Bijon Guha",
@@ -45,6 +45,11 @@ const PeopleMentor = () => {
       img: "/sharath.jpg",
       name: "Sharath Nair",
       expertise: "Backend Microservice",
+    },
+    {
+      img: "/tanmay.png",
+      name: "Tanmay Dash",
+      expertise: "Research Analyst & Data Scientist",
     },
   ];
 

@@ -36,7 +36,7 @@ const InvestmentSection = () => {
 
   return (
     <div className="container mx-auto px-6 py-12">
-      <h2 className="text-4xl font-extrabold text-center bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">
+      <h2 className="text-4xl font-extrabold text-center bg-clip-text">
         Strategic Investments
       </h2>
       <p className="text-lg text-center text-gray-600 mt-2">
@@ -60,8 +60,8 @@ const InvestmentSection = () => {
               <h4 className="text-lg font-medium text-gray-400">
                 {item.subtitle}
               </h4>
-              <div className="h-[2px] bg-gradient-to-r from-purple-400 to-blue-500 w-20 my-2"></div>
-              <p className="text-gray-600 text-base">{item.description}</p>
+              {/* <div className="h-[2px] bg-gradient-to-r from-purple-400 to-blue-500 w-20 my-2"></div> */}
+              <p className="text-gray-600 text-base mt-2">{item.description}</p>
             </div>
           </div>
         ))}

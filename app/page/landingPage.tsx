@@ -10,6 +10,7 @@ import ClientTestimonialSection from "./sections/clientTestimonialSection";
 import ContactUs from "./sections/contactUs";
 import Navbar from "./sections/navbar";
 import CareersSection from "./sections/careersSection";
+import ChatbotButton from "./sections/chatbotButton";
 // import { FaInstagram, FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
 // import { FaGoogleScholar } from "react-icons/fa6";
 // import { SiIeee, SiResearchgate, SiSlideshare } from "react-icons/si";
@@ -35,13 +36,13 @@ export function LandingPage() {
   useEffect(() => {
     const handleScroll = () => {
       const sections = NAV_ITEMS.map((item) =>
-        document.getElementById(item.id)
+        document.getElementById(item.id),
       );
       const scrolledSections = sections.filter(
         (section) =>
           section &&
           section.getBoundingClientRect().top <= window.innerHeight / 2 &&
-          section.getBoundingClientRect().bottom >= window.innerHeight / 2
+          section.getBoundingClientRect().bottom >= window.innerHeight / 2,
       );
 
       if (scrolledSections.length > 0) {
@@ -54,6 +55,8 @@ export function LandingPage() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   // const socials = [
   //   {
@@ -96,7 +99,11 @@ export function LandingPage() {
   return (
     <main>
       {/* Navbar */}
-      <Navbar activeSection={activeSection} />
+      <Navbar
+        activeSection={activeSection}
+        isMenuOpen={isMenuOpen}
+        setIsMenuOpen={setIsMenuOpen}
+      />
 
       {/* Sections */}
       <div className="flex flex-col min-h-screen justify-between">
@@ -184,6 +191,9 @@ export function LandingPage() {
           </footer> */}
         </section>
       </div>
+
+      {/* Chatbot Floating Button */}
+      <ChatbotButton isMenuOpen={isMenuOpen} />
     </main>
   );
 }

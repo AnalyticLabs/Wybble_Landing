@@ -10,9 +10,17 @@ const NAV_ITEMS = [
   { id: "contact", label: "Contact" },
 ];
 
-const Navbar = ({ activeSection }: { activeSection: string }) => {
+const Navbar = ({
+  activeSection,
+  isMenuOpen,
+  setIsMenuOpen,
+}: {
+  activeSection: string;
+  isMenuOpen: boolean;
+  setIsMenuOpen: React.Dispatch<React.SetStateAction<boolean>>;
+}) => {
   const [scrollY, setScrollY] = useState(0);
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  // const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [currentSection, setCurrentSection] = useState("home");
 
   useEffect(() => {
