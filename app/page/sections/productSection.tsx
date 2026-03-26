@@ -2582,6 +2582,7 @@ import {
   Beef,
   Sprout,
   ArrowRight,
+  Telescope,
 } from "lucide-react";
 
 /* ---------------------------
@@ -2735,6 +2736,14 @@ const PRODUCTS = [
       "An AI-driven smart agriculture platform designed for modern farming. Uses data analytics, IoT, and predictive intelligence to optimize crop health and yield. Provides real-time insights on soil, weather, and resource management. Empowers farmers with smarter, sustainable, and data-backed decision-making.",
     icon: Sprout,
     // gradient: "from-emerald-500 to-teal-500",
+    gradient: "bg-primary",
+  },
+  {
+    image: "/telescopic.jpeg",
+    title: "AstroLens",
+    description:
+      "A next-generation telescopic imaging platform built for advanced space exploration. Uses partial aperture technology and AI-powered computational reconstruction to achieve high-resolution imaging without bulky optical systems. Designed for satellite imaging, space sensing, and next-gen scientific observation. Enables compact, lightweight, and cost-efficient space imaging solutions.",
+    icon: Telescope,
     gradient: "bg-primary",
   },
 ];

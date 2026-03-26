@@ -22,6 +22,11 @@ const PeopleMentor = () => {
     //   expertise: "ML & Computer Vision",
     // },
     {
+      img: "/angika.jpeg",
+      name: "Dr. Angika Bulbul",
+      expertise: "Mentor of Space Tech",
+    },
+    {
       img: "/aritra.jpg",
       name: "Aritra Roy",
       expertise: "AI, NLP & Computer Vision",
