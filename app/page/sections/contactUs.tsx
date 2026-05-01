@@ -16,10 +16,10 @@ const ContactUs = () => {
       type: "mailto",
       icon: <HiOutlineMail size={24} className="text-white" />,
       data: [
-        {
-          title: "nimai.analyticlabs@gmail.com",
-          value: "mailto:nimai.analyticlabs@gmail.com",
-        },
+        // {
+        //   title: "nimai.analyticlabs@gmail.com",
+        //   value: "mailto:nimai.analyticlabs@gmail.com",
+        // },
         {
           title: "solutions.analyticlabs@gmail.com",
           value: "mailto:solutions.analyticlabs@gmail.com",
@@ -57,29 +57,30 @@ const ContactUs = () => {
         {
           title: "LinkedIn",
           value:
-            "https://www.linkedin.com/in/nimai-chand-das-adhikari-932396ba?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BHjOKE1KtQY%2BpoKDRnLHAZw%3D%3D",
+            "https://www.linkedin.com/company/wybbleai/posts/?feedView=all",
         },
-        {
-          title: "GoogleScholar",
-          value:
-            "https://scholar.google.co.in/citations?user=JDq-uwwAAAAJ&hl=en",
-        },
-        {
-          title: "ResearchGate",
-          value: "https://www.researchgate.net/profile/Nimai-Das-Adhikari-2",
-        },
-        {
-          title: "Ieee",
-          value:
-            "https://ieeexplore.ieee.org/search/searchresult.jsp?newsearch=true&queryText=nimai%20chand%20das%20adhikari",
-        },
-        {
-          title: "SlideShare",
-          value: "https://www.slideshare.net/NimaiChandDasAdhikar",
-        },
+        // {
+        //   title: "GoogleScholar",
+        //   value:
+        //     "https://scholar.google.co.in/citations?user=JDq-uwwAAAAJ&hl=en",
+        // },
+        // {
+        //   title: "ResearchGate",
+        //   value: "https://www.researchgate.net/profile/Nimai-Das-Adhikari-2",
+        // },
+        // {
+        //   title: "Ieee",
+        //   value:
+        //     "https://ieeexplore.ieee.org/search/searchresult.jsp?newsearch=true&queryText=nimai%20chand%20das%20adhikari",
+        // },
+        // {
+        //   title: "SlideShare",
+        //   value: "https://www.slideshare.net/NimaiChandDasAdhikar",
+        // },
         {
           title: "Instagram",
-          value: "https://www.instagram.com/chand_nimai?igsh=NmdsYThvaGV5eHhh",
+          value:
+            "https://www.instagram.com/monnit_wybble.ai?igsh=MW4waGJudzI2Y3BiOQ==",
         },
       ],
     },
