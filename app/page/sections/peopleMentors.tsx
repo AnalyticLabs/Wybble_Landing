@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/autoplay";
+import exp from "constants";
 
 const PeopleMentor = () => {
   const data = [
@@ -36,25 +37,35 @@ const PeopleMentor = () => {
     //   name: "Debasish Birmiwal",
     //   expertise: "Data Science & Backend",
     // },
-    {
-      img: "/bijon.jpg",
-      name: "Bijon Guha",
-      expertise: "Big Data & Computer Vision",
-    },
+    // {
+    //   img: "/bijon.jpg",
+    //   name: "Bijon Guha",
+    //   expertise: "Big Data & Computer Vision",
+    // },
     {
       img: "/Dibyajyoti.jpg",
       name: "Dibyajyoti Sahoo",
       expertise: "Full Stack Developer",
     },
-    {
-      img: "/sharath.jpg",
-      name: "Sharath Nair",
-      expertise: "Backend Microservice",
-    },
+    // {
+    //   img: "/sharath.jpg",
+    //   name: "Sharath Nair",
+    //   expertise: "Backend Microservice",
+    // },
     {
       img: "/tanmay.png",
       name: "Tanmay Dash",
       expertise: "Research Analyst & Data Scientist",
+    },
+    {
+      img: "/pursharth.jpeg",
+      name: "Pursharth Joshi",
+      expertise: "Full Stack Developer",
+    },
+    {
+      img: "/luqmaan.png",
+      name: "Luqmaan Rasheed",
+      expertise: "Embedded engineer",
     },
   ];
 
