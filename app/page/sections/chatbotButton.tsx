@@ -1,59 +1,36 @@
+"use client";
+
+import { useState, useEffect } from "react";
 import { BotMessageSquare } from "lucide-react";
-import { useEffect, useState } from "react";
 import FloatingChatWidget from "@/components/FloatingChatWidget";
-import { useChat } from "@/components/ChatProvider";
 
-export default function ChatbotButton({ isMenuOpen }: { isMenuOpen: boolean }) {
+export default function ChatbotButton({
+  isMenuOpen = false,
+}: {
+  isMenuOpen?: boolean;
+}) {
   const [isChatOpen, setIsChatOpen] = useState(false);
-  const { isEscalated, isTawkOpen } = useChat();
-  const [hideButton, setHideButton] = useState(false);
 
   useEffect(() => {
-    const handleClose = () => {
-      setIsChatOpen(false);
-    };
-
+    const handleClose = () => setIsChatOpen(false);
     window.addEventListener("chatbot:close", handleClose);
-
-    return () => {
-      window.removeEventListener("chatbot:close", handleClose);
-    };
-  }, []);
-
-  useEffect(() => {
-    if (typeof window === "undefined") return;
-
-    const Tawk_API = (window as any).Tawk_API;
-
-    if (!Tawk_API) return;
-
-    Tawk_API.onChatMaximized = function () {
-      setHideButton(true);
-      setIsChatOpen(false);
-    };
-
-    Tawk_API.onChatMinimized = function () {
-      setHideButton(false);
-    };
-
-    Tawk_API.onChatEnded = function () {
-      setHideButton(false);
-    };
+    return () => window.removeEventListener("chatbot:close", handleClose);
   }, []);
 
   return (
     <>
-      {!isChatOpen && !isEscalated && !isTawkOpen && !hideButton && (
+      {!isChatOpen && (
         <button
           onClick={() => setIsChatOpen(true)}
           className={`
-            fixed right-6 z-50
-            transition-all duration-300 bottom-6
+            fixed right-6 bottom-6 z-50
+            transition-all duration-300
             w-16 h-16 rounded-full
             shadow-xl flex items-center justify-center
             hover:scale-110
             ${isMenuOpen ? "bg-white" : "bg-primary text-white"}
           `}
+          aria-label="Open chat"
         >
           <span
             className={`
